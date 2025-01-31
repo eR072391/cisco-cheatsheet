@@ -1,6 +1,6 @@
 [引用](https://www.rental-network.jp/tips/cisco_command/)  
 
-## Ciscoルータコマンド  
+# Ciscoルータコマンド  
 
 | コマンド | 説明 |
 | --- | --- |
@@ -67,4 +67,22 @@
 | clock set ~ | 日時を設定する |
 | copy flash tftp | flashメモリからtftpサーバへコピーする |
 | copy tftp flash | tftpサーバからflashメモリへコピーする |
+
+
+
+[引用2](https://qiita.com/k-yasuhiro/items/aede8bf0ce31665cc18e)
+
+
+# 基本設定コマンド
+
+## 特権EXECモードに移行  
+特権EXECモードは、機器のステータスを制限なしに確認出来るモード。  
+ユーザEXECモードで enableコマンドを実行する。  
+```
+Router> enable
+Router#
+```
+プロンプトが「>」となっているのはユーザEXECモード  
+「#」となっているのは特権EXECモード  
+
 
