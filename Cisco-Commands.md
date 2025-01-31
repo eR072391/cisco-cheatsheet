@@ -46,6 +46,25 @@
 | version 2 | リップバージョン2を設定する |
 | router eigrp [1~65535] | EIGRPを設定する |
 | no auto-summary | 自動集約を無効にする |
-
-
+| passive-interface ~ | インターフェイスをパッシブにする |
+| router ospf [1~65535] | OSPFを設定する |
+| log-adjacency-changes | OSPFルータの隣接関係のログが出るようにする |
+| redistribute ~ | 再配信の設定 |
+| encapsulation frame-relay | インターフェイスをフレームリレーでカプセルする |
+| clear ip route * | ルーティングテーブルをクリア |
+| no cdp run | CDPを無効にする |
+| encapsulation ppp | インターフェイスをpppでカプセル化する |
+| ppp authentication chap | pppで暗号化の認証をさせる |
+| banner motd | バナーの設定 |
+| speed [10/100/1000/auto] | インターフェイスの速度を変更する |
+| duplex [full/half/auto] | インターフェイスのduplexを変更する |
+| aaa new-model | 認証機能を設定する |
+| no ip domain-lookup | ドメイン名から名前解決サービスを止める |
+| isdn switch-type ntt | スイッチタイプをnttに設定する |
+| ntp server x.x.x.x | NTPサーバのアドレスを指定する |
+| service compress-config | コンフィグを圧縮する |
+| ip tcp header-compression | TCPヘッダー圧縮をする |
+| clock set ~ | 日時を設定する |
+| copy flash tftp | flashメモリからtftpサーバへコピーする |
+| copy tftp flash | tftpサーバからflashメモリへコピーする |
 
