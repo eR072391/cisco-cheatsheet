@@ -96,5 +96,48 @@ Router(config)#
 プロンプトが「(config)」となっていたら、グローバルコンフィグレーションモード。  
 
 ## ホスト名の設定
-グローバルコンフィグレーションモードでhostnameコマンド
+グローバルコンフィグレーションモードで hostnameコマンド
+```
+Router(config)# hostname <ホスト名>
+```
+
+## イネーブルパスワードの設定
+ユーザEXECモードから特権EXECモードに移行する際に設定するパスワード。  
+コンフィグレーションモードで enable passwordコマンド。  
+```
+(config)# enable password <パスワード>
+```
+
+## コンソールパスワードの設定
+グローバルコンフィグレーションモードで line console 0コマンド。  
+```
+(config)# line console 0
+(config-line)#
+```
+プロンプトが「（config-line)#」となっていたら、ラインコンフィグレーションモード。  
+次に、パスワードを設定する passwordコマンド。  
+```
+(config-line)# password <パスワード>
+```
+認証を有効化。  
+```
+(config-line)# login
+```
+
+## VTYパスワードの設定
+ラインコンフィグレーションモードで行う。  
+```
+(config)# line vty <開始ライン番号> [<終了ライン番号>]
+```
+<終了ライン番号>を省略すると、開始ライン番号で指定したVTYポートのみに設定を行う。  
+次にパスワードを設定する。  
+```
+(config-line)# password <パスワード>
+```
+認証を有効化
+```
+(config-line)# login
+```
+
+
 
